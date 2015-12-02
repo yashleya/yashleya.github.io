@@ -210,6 +210,7 @@ li {
 	width: calc(100% + 150px);
 	height: auto;
 	opacity: 0.2;
+	visibility: hidden;
 }
 
 #music-link {
