@@ -1,5 +1,92 @@
+<!DOCTYPE html>
 <html>
+	<head>
+		<title>Ashley Chen</title>
+		<link rel="stylesheet" href="assets/css/home.css">
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+		<script src="assets/js/home.js"></script>
+        <!-- <script src="lib/shortcuts/sticky.min.js"></script> -->
+        <!-- <script src="lib/noframework.waypoints.min.js"></script> -->
+        <!-- <script src="lib/jquery.waypoints.min.js"></script> -->
+        <!-- tweenmax for scrollerama -->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+        <script src="lib/greensock/TweenMax.min.js"></script>
+        <script src="lib/greensock/plugins/ScrollToPlugin.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenLite.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/jquery.gsap.min.js"></script>
+		<script src="https://raw.githubusercontent.com/julianshapiro/velocity/master/velocity.min.js"></script>
+	</head>
 	<body>
-		Hi Eric! -Ashley 
+
+		<!-- Sidebar -->
+        <nav class = "sidebar-container">
+            <ul>
+                <li class="sidebar-item" id="selected">Home</li>
+                <li class="sidebar-item">Resume</li>
+                <li class="sidebar-item">Contact</li>
+            </ul>
+        </nav>
+        <div class="sidebar-decoration"></div>
+        <div id="container">
+        	<div id="intro-container">
+        		Hello, <br>I'm Ashley Chen.
+        	</div>
+        	<div class="sub-intro-container">
+        		I'm a software developer
+        	</div>
+        	<div class="sub-intro-container">
+        		And a student at UC Berkeley.
+        	</div>
+        	<div id="about-me-container">
+        		<div id="headshot-caption">
+        			This is me
+        		</div>
+	        	<div id="cropped-headshot">
+	        		<img src="assets/img/Headshot.jpg">
+	        	</div>
+        	</div>
+        	<div id="interests">
+        		<div id="interests-intro">
+        		Outside of school and work,
+        		</div>
+        		<div class="interest">
+        			<div class="interest-caption" id="cs-caption">
+        				I enjoy teaching computer science,
+        			</div>
+        			<div class="interest-img" id="github-icon-container">
+        				<a href="https://github.com/yashleya"><img id="github-icon" src="assets/img/github-icon.png"></a>
+        			</div>
+        		</div>
+        		<div class="interest" id="volleyball">
+        			<div id="interest-img">
+        				<img id="volleyball-img" src="assets/img/volleyball.png">
+        			</div>
+        			<div class="interest-caption" id="volleyball-caption">
+        				playing volleyball,
+        			</div>
+        		</div>
+        		<div class="interest" id="music">
+        			<div class="interest-caption">
+        				listening to <a id="music-link" href="https://soundcloud.com/ashley-chen-11">music,</a>
+        			</div>
+        			<div id="interest-img-music">
+        				<img id="music-img" src="assets/img/music-notes.png">
+        			</div>
+        		</div>
+        		<div class="interest">
+        			<div class="interest-caption" id="outro">
+        				and meeting new people, among other things.  
+        			</div>
+        		</div>
+        	</div>
+        	<div id="waypoints-container">
+        		To see my resume click here <br>
+        		To contact me click here
+        	</div>
+        	<!-- <a href="">Music Notes Clip art</a> -->
+        </div>
 	</body>
 </html>
