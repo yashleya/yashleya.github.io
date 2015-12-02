@@ -1,12 +1,5 @@
 $(document).ready(function() {
 
-	$(".link").hover(function(){
-	    $(this).css("background", "#73ad40");
-	    }
-	    , function(){
-	    $(this).css("background", "#80bd49");
-	});
-
 	$(".sidebar-item").hover(function() {
 		if ($(this).hasClass("selected")) {
 			//do noth ing

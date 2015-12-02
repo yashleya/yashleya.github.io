@@ -32,6 +32,14 @@ a, a:visited {
 	background: #84d3d6;
 }
 
+#initials {
+	width: calc(100% - 20px);
+	font-family: 'Pacifico', cursive;
+	font-size: 80px;
+	position: absolute;
+	text-align: center;
+}
+
 .sidebar-decoration {
 	position: fixed;
 	width: 8px;
@@ -56,7 +64,7 @@ li {
 	padding-left: 25px;
 }
 
-#selected {
+.selected {
 	background: white;
 	color: #84d3d6;
 }
@@ -69,6 +77,8 @@ li {
 	padding-left: 10px;
 	height: 100%;
 	margin-left: 280px;
+	font-family: 'Raleway', serif;
+	font-weight: 600;
 }
 
 .contact-info {

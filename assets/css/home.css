@@ -21,7 +21,9 @@ a, a:visited {
 
 /* sidebar stuff */ 
 
+
 .sidebar-container {
+	/*font-weight: 400;*/
 	display: flex;
     align-items: center;
 	position: fixed;
@@ -30,6 +32,14 @@ a, a:visited {
 	color: white;
 	/*border-right: 2px solid black;*/
 	background: #84d3d6;
+}
+
+#initials {
+	width: calc(100% - 20px);
+	font-family: 'Pacifico', cursive;
+	font-size: 80px;
+	position: absolute;
+	text-align: center;
 }
 
 .sidebar-decoration {
@@ -56,7 +66,7 @@ li {
 	padding-left: 25px;
 }
 
-#selected {
+.selected {
 	background: white;
 	color: #84d3d6;
 }
@@ -68,6 +78,9 @@ li {
 	padding-left: 10px;
 	height: 100%;
 	margin-left: 280px;
+	/*font-family: 'Lora', serif;*/
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
 }
 
 /* intro styling */

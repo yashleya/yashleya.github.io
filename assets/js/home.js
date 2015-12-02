@@ -21,14 +21,27 @@ $(document).ready(function() {
 		});
 	});
 
+	/* make music notes fade in when scrolled to  */
 	$(window).scroll(function() {
-    if ($(window).scrollTop() > 3700) {
-    	// $(".interest").css("background", "gray");
-    	$("#music-img").css("visibility", "visible");
-    	$("#music-img").fadeIn("medium");
-    } else {
-    	// $(".interest").css("background", "white");
-    	$("#music-img").fadeOut("medium");
-    }
-});
+	    if ($(window).scrollTop() > 3700) {
+	    	$("#music-img").css("visibility", "visible");
+	    	$("#music-img").fadeIn("medium");
+	    } else {
+	    	$("#music-img").fadeOut("medium");
+	    }
+	});
+
+	$(".sidebar-item").hover(function() {
+		if ($(this).hasClass("selected")) {
+			//do noth ing
+		} else {
+			$(this).css("background", "#97dadd");
+		}
+	}, function() {
+		if ($(this).hasClass("selected")) {
+			$(this).css("background", "#white");
+		} else {
+			$(this).css("background", "#84d3d6");
+		}
+	});
 });
