@@ -14,6 +14,11 @@ div {
 	-webkit-transition: all 0.5s;
 }
 
+a, a:visited {
+	text-decoration: none;
+	color: white;
+}
+
 /* sidebar stuff */ 
 
 .sidebar-container {
@@ -160,6 +165,8 @@ li {
 
 #github-icon-container {
 	position: absolute;
+	margin-left: 30px;
+	top: 150px;
 }
 
 #github-icon:hover {
