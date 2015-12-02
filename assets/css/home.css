@@ -147,6 +147,10 @@ li {
 	width: 100%;
 }
 
+#outro-int {
+	padding-bottom: 0;
+}
+
 #interest-img-music {
 	position: absolute;
 	width: calc(100%);
@@ -218,6 +222,22 @@ li {
 #music-link:hover {
 	color: #fd9a36;
 	font-size: 75px;
+}
+
+#scroll-top {
+	position: relative;
+	background: #84d3d6;
+	padding: 30px;
+	color: white;
+	margin-right: 80px;
+	text-align: center;
+	font-size: 32px;
+	margin-bottom: 80px;
+}
+
+.scroll-top-active {
+	background: #399da1;
+	box-shadow: 3px 3px 2px #616161;
 }
 
 

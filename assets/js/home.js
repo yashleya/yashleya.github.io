@@ -1,27 +1,21 @@
 $(document).ready(function() {
 
-	// var waypoint = new Waypoint({
-	//   	element: document.getElementById('music'),
-	//   	handler: function() {
-	//     	notify('Basic waypoint triggered')
-	//   	},
-	//   	// offset: 200%
-	// });
+	$("#scroll-top").hover(function(){
+	    $("#scroll-top").addClass("scroll-top-active");
 
-	var controller = new ScrollMagic.Controller();
+	    }
+	    , function() {
+	    	if ($("#scroll-top").hasClass("scroll-top-active")) {
+	    		$("#scroll-top").removeClass("scroll-top-active");
+	    	}
+	    }
+	    );
 
-	var scene = new ScrollMagic.Scene({triggerElement: "#volleyball"})
-					// trigger a velocity opaticy animation
-					// .setVelocity("#volleyball-caption", {opacity: 0.5}, {duration: 400})
-					.setTween("#animate1", 0.5, {backgroundColor: "green", scale: 2.5})
-					.addIndicators() // add indicators (requires plugin)
-					.addTo(controller);
-
-	// $("#volleyball-caption").click(function() {
-	// 	if ($("#volleyball-caption").hasClass("volleyball-caption-active")) {
-	// 		$("#volleyball-caption").removeClass("volleyball-caption-active");
-	// 	} else {
-	// 		$("#volleyball-caption").addClass("volleyball-caption-active");
-	// 	}
-	// });
+	$("#scroll-top").click(function() {
+		// window.scrollTo(0, 0);
+		$("a[href='#top']").click(function() {
+  			$("html, body").animate({ scrollTop: 0 }, "slow");
+  			return false;
+		});
+	});
 });
